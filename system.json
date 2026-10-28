@@ -1,0 +1,12 @@
+{
+  "id": "bpnb-borg",
+  "title": "Dark Age",
+  "description": "Dark Age - sistema corretto per Foundry VTT",
+  "version": "0.8.2",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351"
+  },
+  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/v0.8.2/Dark_Age_Foundry_system_patched.1.zip",
+  "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/main/system.json"
+}
