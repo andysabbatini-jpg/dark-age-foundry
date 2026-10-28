@@ -1,4 +1,3 @@
-
 {
   "id": "bpnb-borg",
   "title": "Dark Age",
@@ -14,7 +13,7 @@
   "readme": "README.md",
   "bugs": "https://github.com/andysabbatini-jpg/dark-age-foundry/issues",
   "changelog": "CHANGELOG.md",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "compatibility": {
     "minimum": "13",
     "verified": "13.351"
@@ -36,7 +35,7 @@
   "packFolders": [],
   "socket": false,
   "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/main/system.json",
-  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/v0.8.2/Dark_Age_Foundry_system_patched.1.zip",
+  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/v0.8.3/Dark_Age_Foundry_system_v0.8.3_duration_fix.1.zip",
   "background": "systems/bpnb-borg/assets/screen.png",
   "gridDistance": 5,
   "gridUnits": "ft",
