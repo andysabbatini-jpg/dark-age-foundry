@@ -4,13 +4,20 @@
 #dark-age-clocks-overlay .da-clocks-actions{display:flex;gap:4px}
 #dark-age-clocks-overlay button{border:1px solid #77545d;border-radius:3px;color:#e7d9d0;background:#302328;cursor:pointer;min-width:21px;height:21px;line-height:17px;padding:0 5px}
 #dark-age-clocks-overlay button:hover{background:#5b2435;border-color:#b48b8c}
-#dark-age-clocks-overlay .da-clocks-list{display:flex;flex-direction:column;gap:7px;padding:8px;overflow-y:auto;max-height:calc(100vh - 70px)}
-#dark-age-clocks-overlay .da-clock-card{text-align:center;padding:4px 4px 6px;background:rgba(45,35,39,.72);border:1px solid #45363a;border-radius:4px}
+#dark-age-clocks-overlay .da-clocks-list{display:flex;flex-direction:column;gap:3px;padding:6px;overflow-y:auto;max-height:calc(100vh - 70px)}
+#dark-age-clocks-overlay .da-clock-card{text-align:center;padding:4px;background:rgba(45,35,39,.88);border:1px solid #45363a;border-radius:4px;position:relative}
+#dark-age-clocks-overlay .da-clock-heading{display:flex;align-items:center;gap:5px;min-height:24px}
+#dark-age-clocks-overlay .da-clock-heading .da-clock-name{flex:1;min-width:0;margin:0;text-align:left}
+#dark-age-clocks-overlay .da-clock-collapse{flex:0 0 21px;font-size:12px}
+#dark-age-clocks-overlay .da-clock-body{padding-top:3px}
+#dark-age-clocks-overlay .da-clock-body[hidden]{display:none}
+#dark-age-clocks-overlay .da-clock-card.is-clock-collapsed{padding:2px 4px;background:rgba(45,35,39,.96);margin-bottom:-1px}
+#dark-age-clocks-overlay .da-clock-card.is-clock-collapsed .da-clock-heading{min-height:25px}
 #dark-age-clocks-overlay .da-clock-art{width:118px;margin:0 auto}
 #dark-age-clocks-overlay .da-clock-svg{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(0 1px 2px #000)}
 #dark-age-clocks-overlay .da-clock-segment{transition:fill .12s ease,opacity .12s ease}
 #dark-age-clocks-overlay .da-clock-segment:hover{stroke:#ead4c8;stroke-width:2.2}
-#dark-age-clocks-overlay .da-clock-name{margin-top:2px;color:#e0d0c6;font-size:12px;line-height:1.25;overflow-wrap:anywhere;text-shadow:0 1px 2px #000}
+#dark-age-clocks-overlay .da-clock-name{color:#e0d0c6;font-size:12px;line-height:1.25;overflow-wrap:anywhere;text-shadow:0 1px 2px #000}
 #dark-age-clocks-overlay .da-clock-progress{margin-top:2px;font-size:10px;color:#a99291}
 #dark-age-clocks-overlay .da-clock-controls{display:flex;justify-content:center;gap:4px;margin-top:5px}
 #dark-age-clocks-overlay .da-clock-controls button{min-width:23px;font-size:12px}
