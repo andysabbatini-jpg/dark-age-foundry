@@ -1,12 +1,45 @@
+
 {
   "id": "bpnb-borg",
   "title": "Dark Age",
   "description": "Dark Age - sistema corretto per Foundry VTT",
+  "authors": [
+    {
+      "name": "MrTheBino",
+      "discord": "MrTheBino"
+    }
+  ],
+  "url": "https://github.com/andysabbatini-jpg/dark-age-foundry",
+  "license": "LICENSE.txt",
+  "readme": "README.md",
+  "bugs": "https://github.com/andysabbatini-jpg/dark-age-foundry/issues",
+  "changelog": "CHANGELOG.md",
   "version": "0.8.2",
   "compatibility": {
     "minimum": "13",
     "verified": "13.351"
   },
+  "esmodules": [
+    "module/bpnb_borg.mjs"
+  ],
+  "styles": [
+    "css/bpnb_borg.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [],
+  "packFolders": [],
+  "socket": false,
+  "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/main/system.json",
   "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/v0.8.2/Dark_Age_Foundry_system_patched.1.zip",
-  "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/main/system.json"
+  "background": "systems/bpnb-borg/assets/screen.png",
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power"
 }
