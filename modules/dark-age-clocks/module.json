@@ -1,0 +1,14 @@
+{
+  "id": "dark-age-clocks",
+  "title": "Dark Age — Orologi del DM",
+  "description": "Orologi di progressione condivisi per Foundry VTT: 4, 6 o 8 segmenti, gestiti dal DM e visibili a tutti.",
+  "version": "0.1.1",
+  "authors": [{ "name": "Andrea Sabbatini" }],
+  "compatibility": { "minimum": "13", "verified": "13.351" },
+  "esmodules": ["scripts/clocks.js"],
+  "styles": ["styles/clocks.css"],
+  "socket": true,
+  "relationships": { "systems": [{ "id": "bpnb-borg", "type": "system" }] },
+  "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/main/modules/dark-age-clocks/module.json",
+  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/clocks-v0.1.1/dark-age-clocks-v0.1.1.zip"
+}
