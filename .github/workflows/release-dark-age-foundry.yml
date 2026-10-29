@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "Release version (for example 0.8.5)"
+        description: "Release version (for example 0.8.7)"
         required: true
-        default: "0.8.6"
+        default: "0.8.7"
 permissions:
   contents: write
 jobs:
@@ -20,8 +20,8 @@ jobs:
         run: |
           mkdir -p dist/dark-age-foundry
           cp -a Black_Powder_and_Brimstone_0.8.4/bpnb-borg/. dist/dark-age-foundry/
-          cd dist
-          zip -r "../dark-age-foundry.zip" dark-age-foundry
+          cd dist/dark-age-foundry
+          zip -r "../../dark-age-foundry.zip" .
       - name: Publish release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
