@@ -1,8 +1,11 @@
 name: Release Dark Age Foundry system
 on:
-  push:
-    tags:
-      - "v*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version (for example 0.8.5)"
+        required: true
+        default: "0.8.5"
 permissions:
   contents: write
 jobs:
@@ -12,12 +15,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Package system
+        env:
+          VERSION: ${{ inputs.version }}
         run: |
           mkdir -p dist/dark-age-foundry
           cp -a Black_Powder_and_Brimstone_0.8.4/bpnb-borg/. dist/dark-age-foundry/
           cd dist
-          zip -r ../dark-age-foundry.zip dark-age-foundry
+          zip -r "../dark-age-foundry.zip" dark-age-foundry
       - name: Publish release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release create "${GITHUB_REF_NAME}" dark-age-foundry.zip --title "Dark Age Foundry ${GITHUB_REF_NAME}" --notes "Dark Age fork release; upstream credits preserved."
+          VERSION: ${{ inputs.version }}
+        run: |
+          gh release create "v${VERSION}" dark-age-foundry.zip \
+            --title "Dark Age Foundry v${VERSION}" \
+            --notes "Dark Age fork release. Original game and Foundry implementation credits are preserved in the package."
