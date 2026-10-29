@@ -2,7 +2,7 @@
   "id": "dark-age-foundry",
   "title": "Black Powder and Brimstone — Foundry VTT",
   "description": "Fork del sistema Foundry VTT di Black Powder and Brimstone, originariamente sviluppato da Alexander “MrTheBino” Bierbrauer. Il gioco originale è creato da Benjamin Tobitt e pubblicato da Free League Publishing.",
-  "version": "0.8.9",
+  "version": "0.9.0",
   "compatibility": {
     "minimum": 14,
     "verified": 14
@@ -42,6 +42,6 @@
     }
   ],
   "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/main/manifest-dark-age-foundry.json",
-  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/v0.8.9/dark-age-foundry.zip",
+  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/v0.9.0/dark-age-foundry.zip",
   "url": "https://github.com/andysabbatini-jpg/dark-age-foundry"
 }
