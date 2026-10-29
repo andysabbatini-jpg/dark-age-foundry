@@ -4,6 +4,13 @@ import {
 } from '../helpers/effects.mjs';
 import { attackRollDialog,attackRollDialogV2,defendRollDialog } from '../roll_dialog.mjs';
 
+const contextEventsFallback = () => [
+  { title: 'Poteri oscuri e mutazioni', entries: [] },
+  { title: 'Legami, debiti e giuramenti', entries: [] },
+  { title: 'Segreti e conoscenze proibite', entries: [] },
+  { title: 'Ferite e conseguenze', entries: [] },
+];
+
 /**
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
@@ -60,6 +67,12 @@ export class Bpnb_borgActorSheet extends ActorSheet {
 
     // Add roll data for TinyMCE editors.
     context.rollData = context.actor.getRollData();
+    context.events = context.system.events ?? [
+      { title: 'Poteri oscuri e mutazioni', entries: [] },
+      { title: 'Legami, debiti e giuramenti', entries: [] },
+      { title: 'Segreti e conoscenze proibite', entries: [] },
+      { title: 'Ferite e conseguenze', entries: [] },
+    ];
 
     // Prepare active effects
     context.effects = prepareActiveEffectCategories(
@@ -216,6 +229,36 @@ export class Bpnb_borgActorSheet extends ActorSheet {
       li.slideUp(200, () => this.render(false));
     });
 
+    // Narrative events archive (stored on the actor; no mechanical effects).
+    html.on('click', '.event-add', async (ev) => {
+      ev.preventDefault();
+      const groupIndex = Number(ev.currentTarget.dataset.groupIndex);
+      const events = foundry.utils.deepClone(this.actor.system.events ?? contextEventsFallback());
+      if (!events[groupIndex]) return;
+      events[groupIndex].entries ??= [];
+      events[groupIndex].entries.push({ title: '', description: '' });
+      await this.actor.update({ 'system.events': events });
+    });
+
+    html.on('click', '.event-delete', async (ev) => {
+      ev.preventDefault();
+      const groupIndex = Number(ev.currentTarget.dataset.groupIndex);
+      const entryIndex = Number(ev.currentTarget.dataset.entryIndex);
+      const events = foundry.utils.deepClone(this.actor.system.events ?? contextEventsFallback());
+      if (!events[groupIndex]?.entries?.[entryIndex]) return;
+      events[groupIndex].entries.splice(entryIndex, 1);
+      await this.actor.update({ 'system.events': events });
+    });
+
+    html.on('change', '.event-field', async (ev) => {
+      const { groupIndex, entryIndex, field } = ev.currentTarget.dataset;
+      const events = foundry.utils.deepClone(this.actor.system.events ?? contextEventsFallback());
+      const entry = events[Number(groupIndex)]?.entries?.[Number(entryIndex)];
+      if (!entry || !['title', 'description'].includes(field)) return;
+      entry[field] = ev.currentTarget.value;
+      await this.actor.update({ 'system.events': events });
+    });
+
     // Active Effect management
     html.on('click', '.effect-control', (ev) => {
       const row = ev.currentTarget.closest('li');
@@ -253,7 +296,8 @@ export class Bpnb_borgActorSheet extends ActorSheet {
     // Grab any data associated with this control.
     const data = { ...header.dataset };
     // Initialize a default name.
-    const name = `New ${type.capitalize()}`;
+    const names = { weapon: 'Arma', armour: 'Armatura', item: 'Oggetto', spell: 'Incantesimo', feature: 'Tratto' };
+    const name = names[type] ?? 'Oggetto';
     // Prepare the item object.
     const itemData = {
       name: name,
