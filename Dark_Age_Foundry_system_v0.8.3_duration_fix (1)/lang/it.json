@@ -110,7 +110,17 @@
       "EventTitle": "Titolo",
       "EventDescription": "Descrizione breve",
       "DeleteEvent": "Elimina voce",
-      "AddEvent": "Aggiungi"
+      "AddEvent": "Aggiungi",
+      "AddWeapon": "Arma",
+      "AddArmour": "Armatura",
+      "AddItem": "Oggetto",
+      "AddFeature": "Tratto",
+      "AddSpell": "Incantesimo",
+      "AddWeaponName": "Arma",
+      "AddArmourName": "Armatura",
+      "AddItemName": "Oggetto",
+      "AddFeatureName": "Tratto",
+      "AddSpellName": "Incantesimo"
     }
   },
   "TYPES": {
