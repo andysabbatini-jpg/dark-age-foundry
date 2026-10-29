@@ -1,0 +1,12 @@
+{
+  "id": "bpnb-borg",
+  "title": "Black Powder and Brimstone 0.8.4",
+  "description": "Black Powder and Brimstone system for Foundry VTT V14.",
+  "version": "0.8.4",
+  "compatibility": {
+    "minimum": 14,
+    "verified": "14"
+  },
+  "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/dev/foundry-v14-sheet-improvements/system-v0.8.4.json",
+  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/v0.8.4/Black_Powder_and_Brimstone_0.8.4.zip"
+}
