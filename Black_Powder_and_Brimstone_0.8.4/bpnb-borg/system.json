@@ -1,19 +1,20 @@
 {
   "id": "dark-age-foundry",
-  "title": "Black Powder and Brimstone — Dark Age fork",
-  "description": "Fork indipendente di Dark Age per Foundry VTT, mantenuto da Andrea Sabbatini.",
+  "title": "Black Powder and Brimstone — Foundry VTT",
+  "description": "Fork per Foundry VTT di Black Powder and Brimstone, gioco pubblicato da Free League Publishing e creato da Benjamin Tobitt.",
   "authors": [
     {
       "name": "Benjamin Tobitt",
-      "role": "Original game creator"
+      "role": "Creator of the original game",
+      "url": "https://eu.forge-vtt.com/bazaar#"
     },
     {
       "name": "Alexander “MrTheBino” Bierbrauer",
-      "role": "Original Foundry system implementation"
+      "role": "Original Foundry VTT system implementation"
     },
     {
-      "name": "Andrea Sabbatini",
-      "role": "Maintainer of the Dark Age fork",
+      "name": "Andrea Esse",
+      "role": "Maintainer of this Foundry VTT fork",
       "url": "https://github.com/andysabbatini-jpg"
     }
   ],
