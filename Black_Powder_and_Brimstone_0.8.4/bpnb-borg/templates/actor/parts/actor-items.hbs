@@ -1,0 +1,49 @@
+<p><small>{{localize 'BPNB_BORG.UI.CarryHint'}}</small></p>
+<ol class='items-list'>
+  <li class='item flexrow items-header'>
+    <div class='item-name'>{{localize 'BPNB_BORG.UI.Name'}}</div>
+    <div class='item-formula'>{{localize 'BPNB_BORG.UI.Quantity'}}</div>
+    <div class='item-controls'>
+      <a
+        class='item-control item-create'
+        title='{{localize "DOCUMENT.Create" type=(localize 'TYPES.Item.item')}}'
+        data-type='item'
+      >
+        <i class='fas fa-plus'></i>
+        {{localize 'BPNB_BORG.UI.AddItem'}}
+      </a>
+    </div>
+  </li>
+  {{#each gear as |item id|}}
+    <li class='item flexrow' data-item-id='{{item._id}}'>
+      <div class='item-name post-item-description'>
+        <div class='item-image'>
+          <a class='rollable' data-roll-type='item'>
+            <img
+              src='{{item.img}}'
+              title='{{item.name}}'
+              width='24'
+              height='24'
+            />
+          </a>
+        </div>
+        <h4>{{item.name}}</h4>
+      </div>
+      <div class='item-formula item-prop'>{{item.system.quantity}}</div>
+      <div class='item-controls'>
+        <a
+          class='item-control item-edit'
+          title='{{localize "DOCUMENT.Update" type=(localize 'TYPES.Item.item')}}'
+        >
+          <i class='fas fa-edit'></i>
+        </a>
+        <a
+          class='item-control item-delete'
+          title='{{localize "DOCUMENT.Delete" type=(localize 'TYPES.Item.item')}}'
+        >
+          <i class='fas fa-trash'></i>
+        </a>
+      </div>
+    </li>
+  {{/each}}
+</ol>

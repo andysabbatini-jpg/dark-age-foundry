@@ -1,0 +1,56 @@
+{
+  "id": "dark-age-foundry",
+  "title": "Black Powder and Brimstone 0.8.4",
+  "description": "Fork indipendente di Dark Age per Foundry VTT, mantenuto da Andrea Sabbatini.",
+  "authors": [
+    {
+      "name": "Andrea Sabbatini",
+      "url": "https://github.com/andysabbatini-jpg"
+    }
+  ],
+  "url": "https://github.com/andysabbatini-jpg/dark-age-foundry",
+  "license": "LICENSE.txt",
+  "readme": "README.md",
+  "bugs": "https://github.com/andysabbatini-jpg/dark-age-foundry/issues",
+  "changelog": "CHANGELOG.md",
+  "media": [
+    {
+      "type": "setup",
+      "url": "systems/dark-age-foundry/assets/screen.png",
+      "thumbnail": "systems/dark-age-foundry/assets/screen.png"
+    }
+  ],
+  "version": "0.8.4",
+  "compatibility": {
+    "minimum": 14,
+    "verified": "14"
+  },
+  "esmodules": [
+    "module/bpnb_borg.mjs"
+  ],
+  "styles": [
+    "css/bpnb_borg.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "it",
+      "name": "Italiano",
+      "path": "lang/it.json"
+    }
+  ],
+  "packs": [],
+  "packFolders": [],
+  "socket": false,
+  "background": "systems/dark-age-foundry/assets/screen.png",
+  "grid": {
+    "distance": 5,
+    "units": "ft"
+  },
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power"
+}
