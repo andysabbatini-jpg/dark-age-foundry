@@ -1,24 +1,25 @@
 {
   "id": "dark-age-clocks",
   "title": "Dark Age — Orologi del DM",
-  "description": "Pannello di orologi per il Dungeon Master.",
-  "version": "0.1.4",
-  "compatibility": {
-    "minimum": "12",
-    "verified": "13"
-  },
+  "description": "Orologi di progressione condivisi per Foundry VTT: 4, 6 o 8 segmenti, gestiti dal DM e visibili a tutti.",
+  "version": "0.1.5",
   "authors": [
     {
       "name": "Andrea Sabbatini"
     }
   ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
   "esmodules": [
-    "scripts/dark-age-clocks.js"
+    "scripts/clocks.js"
   ],
   "styles": [
-    "styles/dark-age-clocks.css"
+    "styles/clocks.css"
   ],
+  "socket": true,
   "url": "https://github.com/andysabbatini-jpg/dark-age-foundry",
   "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/main/modules/dark-age-clocks/module.json",
-  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/clocks-v0.1.4/dark-age-clocks-v0.1.4.zip"
+  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/clocks-v0.1.5/dark-age-clocks-v0.1.5.zip"
 }
