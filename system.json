@@ -1,22 +1,21 @@
 {
   "id": "bpnb-borg",
   "title": "Black Powder and Brimstone",
-  "description": "BPB - sistema corretto per Foundry VTT",
+  "description": "Versione aggiornata per Foundry VTT V14, con correzioni e miglioramenti del fork Dark Age.",
   "authors": [
     {
-      "name": "MrTheBino",
-      "discord": "MrTheBino"
+      "name": "Alexander \"MrTheBino\" Bierbrauer",
+      "url": "https://github.com/MrTheBino"
     }
   ],
   "url": "https://github.com/andysabbatini-jpg/dark-age-foundry",
   "license": "LICENSE.txt",
   "readme": "README.md",
   "bugs": "https://github.com/andysabbatini-jpg/dark-age-foundry/issues",
-  "changelog": "CHANGELOG.md",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "compatibility": {
-    "minimum": "13",
-    "verified": "13.351"
+    "minimum": 14,
+    "verified": "14"
   },
   "esmodules": [
     "module/bpnb_borg.mjs"
@@ -35,7 +34,7 @@
   "packFolders": [],
   "socket": false,
   "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/main/system.json",
-  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/v0.8.3/Dark_Age_Foundry_system_v0.8.3_duration_fix.1.zip",
+  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/v0.8.4/Black_Powder_and_Brimstone_0.8.4.zip",
   "background": "systems/bpnb-borg/assets/screen.png",
   "gridDistance": 5,
   "gridUnits": "ft",
