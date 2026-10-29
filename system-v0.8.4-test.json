@@ -1,12 +1,22 @@
 {
-  "id": "bpnb-borg",
-  "title": "Dark Age 0.8.4 TEST",
-  "description": "Pacchetto di test separato per Foundry VTT V14. Non usare nel mondo operativo senza backup.",
+  "id": "dark-age-foundry-test",
+  "title": "Dark Age — Black Powder & Brimstone (Test)",
+  "description": "Pacchetto di test separato per Foundry VTT V14.",
   "version": "0.8.4",
   "compatibility": {
     "minimum": 14,
     "verified": "14"
   },
+  "authors": [
+    {
+      "name": "Andrea Sabbatini",
+      "url": "https://github.com/andysabbatini-jpg"
+    },
+    {
+      "name": "Alexander \"MrTheBino\" Bierbrauer",
+      "url": "https://github.com/MrTheBino"
+    }
+  ],
   "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/dev/foundry-v14-sheet-improvements/system-v0.8.4-test.json",
   "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/v0.8.4-test/Dark_Age_Foundry_system_v0.8.4-test.zip"
 }
