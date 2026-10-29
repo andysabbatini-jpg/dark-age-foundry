@@ -7,6 +7,12 @@
     "minimum": 14,
     "verified": "14"
   },
+  "authors": [
+    {
+      "name": "Alexander \"MrTheBino\" Bierbrauer",
+      "url": "https://github.com/MrTheBino"
+    }
+  ],
   "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/dev/foundry-v14-sheet-improvements/system-v0.8.4.json",
   "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/v0.8.4/Black_Powder_and_Brimstone_0.8.4.zip"
 }
