@@ -1,0 +1,58 @@
+name: Build Dark Age Clocks 0.1.2
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - fix/clock-collapse-and-drag
+    paths:
+      - "modules/dark-age-clocks/**"
+      - ".github/workflows/build-dark-age-clocks.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Validate manifest and package
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f modules/dark-age-clocks/module.json
+          test -f modules/dark-age-clocks/scripts/clocks.js
+          test -f modules/dark-age-clocks/styles/clocks.css
+          python - <<'PY'
+          import json
+          with open("modules/dark-age-clocks/module.json", encoding="utf-8") as f:
+              d=json.load(f)
+          assert d["id"] == "dark-age-clocks"
+          assert d["version"] == "0.1.2"
+          assert d["manifest"].endswith("/clocks-v0.1.2/modules/dark-age-clocks/module.json")
+          print("Manifest validation passed")
+          PY
+          mkdir -p dist
+          cp -a modules/dark-age-clocks dist/dark-age-clocks
+          cd dist
+          zip -qr ../dark-age-clocks-v0.1.2.zip dark-age-clocks
+          cd ..
+          unzip -l dark-age-clocks-v0.1.2.zip
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dark-age-clocks-v0.1.2
+          path: dark-age-clocks-v0.1.2.zip
+          if-no-files-found: error
+          retention-days: 14
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: clocks-v0.1.2
+          name: Dark Age — Orologi del DM 0.1.2
+          prerelease: false
+          draft: false
+          generate_release_notes: false
+          files: dark-age-clocks-v0.1.2.zip
