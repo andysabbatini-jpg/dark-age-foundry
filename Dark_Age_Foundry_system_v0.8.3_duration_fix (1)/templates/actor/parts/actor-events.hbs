@@ -1,0 +1,19 @@
+<div class="narrative-events">
+  {{#each events as |group groupIndex|}}
+    <section class="event-group">
+      <h3 class="section-header"><strong>{{group.title}}</strong></h3>
+      <ol class="items-list">
+        {{#each group.entries as |entry entryIndex|}}
+          <li class="item event-entry">
+            <div class="flexrow">
+              <input class="event-field" type="text" data-group-index="{{groupIndex}}" data-entry-index="{{entryIndex}}" data-field="title" value="{{entry.title}}" placeholder="Titolo" aria-label="Titolo" />
+              <a class="item-control event-delete" data-group-index="{{groupIndex}}" data-entry-index="{{entryIndex}}" title="Elimina voce"><i class="fas fa-trash"></i></a>
+            </div>
+            <textarea class="event-field" data-group-index="{{groupIndex}}" data-entry-index="{{entryIndex}}" data-field="description" rows="2" placeholder="Descrizione breve">{{entry.description}}</textarea>
+          </li>
+        {{/each}}
+      </ol>
+      <button type="button" class="event-add" data-group-index="{{groupIndex}}"><i class="fas fa-plus"></i> Aggiungi</button>
+    </section>
+  {{/each}}
+</div>
