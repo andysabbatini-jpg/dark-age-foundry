@@ -473,3 +473,11 @@
     padding: 0;
     width: 16px;
 }
+
+/* Narrative archive fields (0.8.4 test) */
+.narrative-events .event-group { margin: 0 0 1rem; }
+.narrative-events .event-entry { display: block; padding: 0.35rem 0.25rem; }
+.narrative-events .event-entry input.event-field,
+.narrative-events .event-entry textarea.event-field { width: 100%; min-width: 0; margin: 0.2rem 0; }
+.narrative-events .event-entry textarea.event-field { resize: vertical; }
+.narrative-events .event-add { margin: 0.25rem 0 0.5rem; }
