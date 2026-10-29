@@ -1,11 +1,14 @@
 {
   "id": "dark-age-foundry",
   "title": "Dark Age",
-  "description": "Sistema Dark Age per Foundry VTT V14, mantenuto da Andrea Sabbatini.",
+  "description": "Dark Age: fork indipendente per Foundry VTT V14, mantenuto da Andrea Sabbatini. Basato sul lavoro originale di Alexander “MrTheBino” Bierbrauer; progetto non ufficiale e distinto dall'originale.",
   "authors": [
     {
       "name": "Andrea Sabbatini",
       "url": "https://github.com/andysabbatini-jpg"
+    },
+    {
+      "name": "Alexander “MrTheBino” Bierbrauer"
     }
   ],
   "url": "https://github.com/andysabbatini-jpg/dark-age-foundry",
