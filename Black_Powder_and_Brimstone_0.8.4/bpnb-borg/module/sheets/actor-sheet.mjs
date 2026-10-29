@@ -34,7 +34,7 @@ export class Bpnb_borgActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    return `systems/bpnb-borg/templates/actor/actor-${this.actor.type}-sheet.hbs`;
+    return `systems/dark-age-foundry/templates/actor/actor-${this.actor.type}-sheet.hbs`;
   }
 
   /* -------------------------------------------- */
