@@ -30,7 +30,7 @@
       "thumbnail": "systems/dark-age-foundry/assets/screen.png"
     }
   ],
-  "version": "0.8.8",
+  "version": "0.8.9",
   "compatibility": {
     "minimum": 14,
     "verified": "14"
@@ -64,5 +64,5 @@
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
   "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/main/Black_Powder_and_Brimstone_0.8.4/bpnb-borg/system.json",
-  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/v0.8.8/dark-age-foundry.zip"
+  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/v0.8.9/dark-age-foundry.zip"
 }
