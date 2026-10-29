@@ -1,0 +1,19 @@
+<div class="narrative-events">
+  {{#each events as |group groupIndex|}}
+    <section class="event-group">
+      <h3 class="section-header"><strong>{{group.title}}</strong></h3>
+      <ol class="items-list">
+        {{#each group.entries as |entry entryIndex|}}
+          <li class="item event-entry">
+            <div class="flexrow">
+              <input class="event-field" type="text" data-group-index="{{groupIndex}}" data-entry-index="{{entryIndex}}" data-field="title" value="{{entry.title}}" placeholder="{{localize 'BPNB_BORG.UI.EventTitle'}}" aria-label="{{localize 'BPNB_BORG.UI.EventTitle'}}" />
+              <a class="item-control event-delete" data-group-index="{{groupIndex}}" data-entry-index="{{entryIndex}}" title="{{localize 'BPNB_BORG.UI.DeleteEvent'}}"><i class="fas fa-trash"></i></a>
+            </div>
+            <textarea class="event-field" data-group-index="{{groupIndex}}" data-entry-index="{{entryIndex}}" data-field="description" rows="2" placeholder="{{localize 'BPNB_BORG.UI.EventDescription'}}">{{entry.description}}</textarea>
+          </li>
+        {{/each}}
+      </ol>
+      <button type="button" class="event-add" data-group-index="{{groupIndex}}"><i class="fas fa-plus"></i> {{localize 'BPNB_BORG.UI.AddEvent'}}</button>
+    </section>
+  {{/each}}
+</div>

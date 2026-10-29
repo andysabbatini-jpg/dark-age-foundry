@@ -1,0 +1,10 @@
+Dark Age - patch per Foundry VTT
+Base: Black Powder & Brimstone system, bpnb-borg 0.8.1 (fork IT)
+Correzione:
+- module/sheets/actor-sheet.mjs: sostituito duplicate(header.dataset), non definita, con { ...header.dataset }.
+- applicata la stessa correzione al sorgente src/datamodels/... per evitare che una futura build ripristini il bug.
+Metadati:
+- titolo visualizzato: Dark Age
+- ID del sistema mantenuto: bpnb-borg, per compatibilita con mondi/dati esistenti.
+- rimossi gli URL manifest/download upstream dal system.json per evitare aggiornamenti automatici alla versione non corretta.
+Nota: questo archivio e' il PACCHETTO DEL SISTEMA, non un export del mondo Foundry. Non contiene scene, attori, journal o impostazioni del mondo.
