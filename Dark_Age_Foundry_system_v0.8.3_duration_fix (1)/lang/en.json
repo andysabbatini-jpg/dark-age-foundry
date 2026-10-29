@@ -104,7 +104,23 @@
       "ShortRestFlavor": "Short Rest - Heal for:",
       "LongRestFlavor": "Long Rest - Heal for:",
       "RollDialogTitle": "Roll Dialog",
-      "DefendDialogTitle": "Defend Roll Dialog"
+      "DefendDialogTitle": "Defend Roll Dialog",
+      "Subclass": "Subclass",
+      "Events": "Narrative Chronicle & Effects",
+      "EventTitle": "Title",
+      "EventDescription": "Short description",
+      "DeleteEvent": "Delete entry",
+      "AddEvent": "Add",
+      "AddWeapon": "Add Weapon",
+      "AddArmour": "Add Armour",
+      "AddItem": "Add Item",
+      "AddFeature": "Add Feature",
+      "AddSpell": "Add Spell",
+      "AddWeaponName": "Weapon",
+      "AddArmourName": "Armour",
+      "AddItemName": "Item",
+      "AddFeatureName": "Feature",
+      "AddSpellName": "Spell"
     }
   },
   "TYPES": {
