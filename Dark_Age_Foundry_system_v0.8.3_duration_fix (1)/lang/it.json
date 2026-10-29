@@ -104,7 +104,9 @@
       "ShortRestFlavor": "Riposo breve - Recuperi:",
       "LongRestFlavor": "Riposo lungo - Recuperi:",
       "RollDialogTitle": "Finestra di tiro",
-      "DefendDialogTitle": "Finestra di difesa"
+      "DefendDialogTitle": "Finestra di difesa",
+      "Subclass": "Sottoclasse",
+      "Events": "Cronache ed effetti narrativi"
     }
   },
   "TYPES": {
