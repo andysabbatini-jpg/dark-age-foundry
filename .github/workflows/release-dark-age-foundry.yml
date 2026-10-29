@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "Release version (for example 0.8.7)"
+        description: "Release version (for example 0.8.8)"
         required: true
-        default: "0.8.7"
+        default: "0.8.8"
 permissions:
   contents: write
 jobs:
@@ -29,4 +29,4 @@ jobs:
         run: |
           gh release create "v${VERSION}" dark-age-foundry.zip \
             --title "Dark Age Foundry v${VERSION}" \
-            --notes "Dark Age fork release. Original game and Foundry implementation credits are preserved in the package."
+            --notes "Black Powder and Brimstone Foundry VTT fork. Original game and Foundry implementation credits are preserved in the package."
