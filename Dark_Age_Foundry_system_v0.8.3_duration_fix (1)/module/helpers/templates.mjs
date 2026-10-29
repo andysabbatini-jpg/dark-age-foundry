@@ -11,6 +11,7 @@ export const preloadHandlebarsTemplates = async function () {
     'systems/bpnb-borg/templates/actor/parts/actor-spells.hbs',
     'systems/bpnb-borg/templates/actor/parts/actor-weapons.hbs',
     'systems/bpnb-borg/templates/actor/parts/actor-effects.hbs',
+    'systems/bpnb-borg/templates/actor/parts/actor-events.hbs',
     'systems/bpnb-borg/templates/actor/parts/actor-armour.hbs',
     // Item partials
     'systems/bpnb-borg/templates/item/parts/item-effects.hbs',
