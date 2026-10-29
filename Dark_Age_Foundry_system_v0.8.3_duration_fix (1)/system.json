@@ -1,29 +1,29 @@
 {
-    "id": "bpnb-borg",
+    "id": "dark-age-foundry",
     "title": "Dark Age",
-    "description": "The Black Powder & Brimstone system for FoundryVTT!",
+    "description": "Fork indipendente di Dark Age per Foundry VTT, mantenuto da Andrea Sabbatini.",
     "authors": [
         {
-            "name": "MrTheBino",
-            "discord": "MrTheBino"
+            "name": "Andrea Sabbatini",
+            "url": "https://github.com/andysabbatini-jpg"
         }
     ],
-    "url": "https://github.com/MrTheBino/bpnb_borg",
+    "url": "https://github.com/andysabbatini-jpg/dark-age-foundry",
     "license": "LICENSE.txt",
     "readme": "README.md",
-    "bugs": "https://github.com/MrTheBino/bpnb_borg/issues",
+    "bugs": "https://github.com/andysabbatini-jpg/dark-age-foundry/issues",
     "changelog": "CHANGELOG.md",
     "media": [
         {
             "type": "setup",
-            "url": "systems/bpnb-borg/assets/screen.png",
-            "thumbnail": "systems/bpnb-borg/assets/screen.png"
+            "url": "systems/dark-age-foundry/assets/screen.png",
+            "thumbnail": "systems/dark-age-foundry/assets/screen.png"
         }
     ],
-    "version": "0.8.3",
+    "version": "0.8.4",
     "compatibility": {
-        "minimum": 13,
-        "verified": "13.351"
+        "minimum": 14,
+        "verified": "14"
     },
     "esmodules": [
         "module/bpnb_borg.mjs"
@@ -46,7 +46,7 @@
     "packs": [],
     "packFolders": [],
     "socket": false,
-    "background": "systems/bpnb-borg/assets/screen.png",
+    "background": "systems/dark-age-foundry/assets/screen.png",
     "grid": {
         "distance": 5,
         "units": "ft"
