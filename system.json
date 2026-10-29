@@ -1,15 +1,11 @@
 {
   "id": "dark-age-foundry",
-  "title": "Dark Age — Black Powder & Brimstone (Fork)",
-  "description": "Fork indipendente per Foundry VTT V14 del sistema Black Powder & Brimstone, con correzioni e miglioramenti.",
+  "title": "Dark Age",
+  "description": "Sistema Dark Age per Foundry VTT V14, mantenuto da Andrea Sabbatini.",
   "authors": [
     {
       "name": "Andrea Sabbatini",
       "url": "https://github.com/andysabbatini-jpg"
-    },
-    {
-      "name": "Alexander \"MrTheBino\" Bierbrauer",
-      "url": "https://github.com/MrTheBino"
     }
   ],
   "url": "https://github.com/andysabbatini-jpg/dark-age-foundry",
