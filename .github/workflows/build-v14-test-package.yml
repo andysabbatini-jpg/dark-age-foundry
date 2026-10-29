@@ -1,4 +1,4 @@
-name: Build Foundry V14 test package
+name: Build Black Powder and Brimstone 0.8.4
 
 on:
   workflow_dispatch:
@@ -29,6 +29,7 @@ jobs:
           p = Path("Dark_Age_Foundry_system_v0.8.3_duration_fix (1)/system.json")
           data = json.loads(p.read_text(encoding="utf-8"))
           data["version"] = "0.8.4"
+data["title"] = "Black Powder and Brimstone 0.8.4"
           data["compatibility"] = {"minimum": 14, "verified": "14"}
           p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
           for f in Path("Dark_Age_Foundry_system_v0.8.3_duration_fix (1)").rglob("*.json"):
@@ -38,7 +39,7 @@ jobs:
           mkdir -p dist/bpnb-borg
           cp -a "$SRC/." dist/bpnb-borg/
           cd dist
-          zip -qr ../Dark_Age_Foundry_system_v0.8.4-test.zip bpnb-borg
+          zip -qr ../Black_Powder_and_Brimstone_0.8.4.zip bpnb-borg
           cd ..
           unzip -l Dark_Age_Foundry_system_v0.8.4-test.zip
       - name: Upload installable test ZIP
@@ -49,12 +50,12 @@ jobs:
           if-no-files-found: error
           retention-days: 14
 
-      - name: Publish separate 0.8.4 test prerelease
+      - name: Publish Black Powder and Brimstone 0.8.4 release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v0.8.4-test
-          name: Dark Age Foundry 0.8.4 — test V14
-          prerelease: true
+          tag_name: v0.8.4
+          name: Black Powder and Brimstone 0.8.4
+          prerelease: false
           draft: false
           generate_release_notes: false
           files: Dark_Age_Foundry_system_v0.8.4-test.zip
