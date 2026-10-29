@@ -1,0 +1,23 @@
+#dark-age-clocks-overlay{position:fixed;z-index:100;top:12px;right:12px;width:210px;max-height:calc(100vh - 24px);overflow:hidden;color:#e0d3cb;background:rgba(23,20,22,.94);border:1px solid #60464b;border-radius:5px;box-shadow:0 4px 18px rgba(0,0,0,.42);font-family:"Signika","Palatino Linotype",serif;backdrop-filter:blur(4px)}
+#dark-age-clocks-overlay *{box-sizing:border-box}
+#dark-age-clocks-overlay .da-clocks-bar{display:flex;align-items:center;justify-content:space-between;padding:5px 7px 5px 10px;cursor:move;user-select:none;background:linear-gradient(90deg,#251b20,#39232b);border-bottom:1px solid #65464d;letter-spacing:.12em;font-size:10px;color:#c8b6ad}
+#dark-age-clocks-overlay .da-clocks-actions{display:flex;gap:4px}
+#dark-age-clocks-overlay button{border:1px solid #77545d;border-radius:3px;color:#e7d9d0;background:#302328;cursor:pointer;min-width:21px;height:21px;line-height:17px;padding:0 5px}
+#dark-age-clocks-overlay button:hover{background:#5b2435;border-color:#b48b8c}
+#dark-age-clocks-overlay .da-clocks-list{display:flex;flex-direction:column;gap:7px;padding:8px;overflow-y:auto;max-height:calc(100vh - 70px)}
+#dark-age-clocks-overlay .da-clock-card{text-align:center;padding:4px 4px 6px;background:rgba(45,35,39,.72);border:1px solid #45363a;border-radius:4px}
+#dark-age-clocks-overlay .da-clock-art{width:118px;margin:0 auto}
+#dark-age-clocks-overlay .da-clock-svg{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(0 1px 2px #000)}
+#dark-age-clocks-overlay .da-clock-segment{transition:fill .12s ease,opacity .12s ease}
+#dark-age-clocks-overlay .da-clock-segment:hover{stroke:#ead4c8;stroke-width:2.2}
+#dark-age-clocks-overlay .da-clock-name{margin-top:2px;color:#e0d0c6;font-size:12px;line-height:1.25;overflow-wrap:anywhere;text-shadow:0 1px 2px #000}
+#dark-age-clocks-overlay .da-clock-progress{margin-top:2px;font-size:10px;color:#a99291}
+#dark-age-clocks-overlay .da-clock-controls{display:flex;justify-content:center;gap:4px;margin-top:5px}
+#dark-age-clocks-overlay .da-clock-controls button{min-width:23px;font-size:12px}
+#dark-age-clocks-overlay .da-clocks-empty{text-align:center;padding:10px 4px;color:#a99291;font-size:11px}
+#dark-age-clocks-overlay.is-collapsed{width:130px}
+#dark-age-clocks-overlay.is-collapsed .da-clocks-list{display:none}
+.da-clock-form .form-group{display:flex;flex-direction:column;gap:4px;margin:10px 0}
+.da-clock-form label{font-weight:600}
+.da-clock-form input,.da-clock-form select{width:100%}
+@media(max-width:600px){#dark-age-clocks-overlay{width:170px;top:6px;right:6px;max-height:60vh}#dark-age-clocks-overlay .da-clock-art{width:96px}#dark-age-clocks-overlay .da-clocks-list{max-height:calc(60vh - 40px)}}
