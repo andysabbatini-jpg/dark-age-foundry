@@ -4,7 +4,16 @@
   "description": "Fork indipendente di Dark Age per Foundry VTT, mantenuto da Andrea Sabbatini.",
   "authors": [
     {
+      "name": "Benjamin Tobitt",
+      "role": "Original game creator"
+    },
+    {
+      "name": "Alexander “MrTheBino” Bierbrauer",
+      "role": "Original Foundry system implementation"
+    },
+    {
       "name": "Andrea Sabbatini",
+      "role": "Maintainer of the Dark Age fork",
       "url": "https://github.com/andysabbatini-jpg"
     }
   ],
