@@ -27,6 +27,6 @@
       }
     ]
   },
-  "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/fix/clock-collapse-and-drag/modules/dark-age-clocks/module.json",
+  "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/clocks-v0.1.4/modules/dark-age-clocks/module.json",
   "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/clocks-v0.1.4/dark-age-clocks-v0.1.4.zip"
 }
