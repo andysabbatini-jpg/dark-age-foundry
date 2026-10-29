@@ -1,7 +1,7 @@
 {
   "id": "dark-age-foundry",
   "title": "Dark Age",
-  "description": "Fork indipendente per Foundry VTT V14 del sistema Dark Age.",
+  "description": "Dark Age è un fork indipendente del sistema Foundry VTT per il gioco di ruolo Black Powder & Brimstone, creato da Benjamin Tobitt. Basato sull'integrazione Foundry originale di Alexander “MrTheBino” Bierbrauer; mantenuto da Andrea Sabbatini. Progetto non ufficiale e non affiliato agli autori o agli editori del gioco.",
   "authors": [
     {
       "name": "Andrea Sabbatini",
