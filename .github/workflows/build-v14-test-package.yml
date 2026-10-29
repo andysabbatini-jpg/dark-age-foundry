@@ -7,7 +7,7 @@ on:
       - dev/foundry-v14-sheet-improvements
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   package:
@@ -48,3 +48,13 @@ jobs:
           path: Dark_Age_Foundry_system_v0.8.4-test.zip
           if-no-files-found: error
           retention-days: 14
+
+      - name: Publish separate 0.8.4 test prerelease
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v0.8.4-test
+          name: Dark Age Foundry 0.8.4 — test V14
+          prerelease: true
+          draft: false
+          generate_release_notes: false
+          files: Dark_Age_Foundry_system_v0.8.4-test.zip
