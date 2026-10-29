@@ -1,13 +1,17 @@
 {
-  "id": "bpnb-borg",
-  "title": "Black Powder and Brimstone 0.8.4",
-  "description": "Black Powder and Brimstone system for Foundry VTT V14.",
+  "id": "dark-age-foundry",
+  "title": "Dark Age — Black Powder & Brimstone (Fork)",
+  "description": "Fork indipendente per Foundry VTT V14 del sistema Black Powder & Brimstone.",
   "version": "0.8.4",
   "compatibility": {
     "minimum": 14,
     "verified": "14"
   },
   "authors": [
+    {
+      "name": "Andrea Sabbatini",
+      "url": "https://github.com/andysabbatini-jpg"
+    },
     {
       "name": "Alexander \"MrTheBino\" Bierbrauer",
       "url": "https://github.com/MrTheBino"
