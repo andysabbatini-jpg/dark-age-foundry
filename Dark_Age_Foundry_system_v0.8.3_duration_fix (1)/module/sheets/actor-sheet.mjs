@@ -67,12 +67,7 @@ export class Bpnb_borgActorSheet extends ActorSheet {
 
     // Add roll data for TinyMCE editors.
     context.rollData = context.actor.getRollData();
-    context.events = context.system.events ?? [
-      { title: 'Poteri oscuri e mutazioni', entries: [] },
-      { title: 'Legami, debiti e giuramenti', entries: [] },
-      { title: 'Segreti e conoscenze proibite', entries: [] },
-      { title: 'Ferite e conseguenze', entries: [] },
-    ];
+    context.events = context.system.events ?? contextEventsFallback();
 
     // Prepare active effects
     context.effects = prepareActiveEffectCategories(
@@ -296,8 +291,14 @@ export class Bpnb_borgActorSheet extends ActorSheet {
     // Grab any data associated with this control.
     const data = { ...header.dataset };
     // Initialize a default name.
-    const names = { weapon: 'Arma', armour: 'Armatura', item: 'Oggetto', spell: 'Incantesimo', feature: 'Tratto' };
-    const name = names[type] ?? 'Oggetto';
+    const nameKeys = {
+      weapon: 'BPNB_BORG.UI.AddWeaponName',
+      armour: 'BPNB_BORG.UI.AddArmourName',
+      item: 'BPNB_BORG.UI.AddItemName',
+      spell: 'BPNB_BORG.UI.AddSpellName',
+      feature: 'BPNB_BORG.UI.AddFeatureName',
+    };
+    const name = game.i18n.localize(nameKeys[type] ?? 'BPNB_BORG.UI.AddItemName');
     // Prepare the item object.
     const itemData = {
       name: name,
