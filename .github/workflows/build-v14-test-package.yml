@@ -1,0 +1,50 @@
+name: Build Foundry V14 test package
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - dev/foundry-v14-sheet-improvements
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout development branch
+        uses: actions/checkout@v4
+
+      - name: Prepare and validate package
+        shell: bash
+        run: |
+          set -euo pipefail
+          SRC="Dark_Age_Foundry_system_v0.8.3_duration_fix (1)"
+          test -f "$SRC/system.json"
+          test -f "$SRC/module/bpnb_borg.mjs"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("Dark_Age_Foundry_system_v0.8.3_duration_fix (1)/system.json")
+          data = json.loads(p.read_text(encoding="utf-8"))
+          data["version"] = "0.8.4"
+          data["compatibility"] = {"minimum": 14, "verified": "14"}
+          p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          for f in Path("Dark_Age_Foundry_system_v0.8.3_duration_fix (1)").rglob("*.json"):
+              json.loads(f.read_text(encoding="utf-8"))
+          print("JSON validation passed")
+          PY
+          mkdir -p dist/bpnb-borg
+          cp -a "$SRC/." dist/bpnb-borg/
+          cd dist
+          zip -qr ../Dark_Age_Foundry_system_v0.8.4-test.zip bpnb-borg
+          cd ..
+          unzip -l Dark_Age_Foundry_system_v0.8.4-test.zip
+      - name: Upload installable test ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: Dark-Age-Foundry-0.8.4-test
+          path: Dark_Age_Foundry_system_v0.8.4-test.zip
+          if-no-files-found: error
+          retention-days: 14
