@@ -2,7 +2,7 @@
   "id": "dark-age-foundry",
   "title": "Black Powder and Brimstone — Dark Age fork",
   "description": "Community-maintained Foundry VTT system fork. Original game and upstream Foundry implementation credits remain in the package.",
-  "version": "0.8.6",
+  "version": "0.8.7",
   "compatibility": {
     "minimum": 14,
     "verified": 14
@@ -40,6 +40,6 @@
     }
   ],
   "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/main/manifest-dark-age-foundry.json",
-  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/v0.8.6/dark-age-foundry.zip",
+  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/v0.8.7/dark-age-foundry.zip",
   "url": "https://github.com/andysabbatini-jpg/dark-age-foundry"
 }
