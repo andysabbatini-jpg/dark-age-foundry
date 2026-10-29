@@ -1,7 +1,7 @@
 #dark-age-clocks-overlay{position:fixed;z-index:100;top:12px;right:12px;width:210px;max-height:calc(100vh - 24px);overflow:hidden;color:#e0d3cb;background:rgba(23,20,22,.94);border:1px solid #60464b;border-radius:5px;box-shadow:0 4px 18px rgba(0,0,0,.42);font-family:"Signika","Palatino Linotype",serif;backdrop-filter:blur(4px)}
 #dark-age-clocks-overlay *{box-sizing:border-box}
 #dark-age-clocks-overlay .da-clocks-bar{display:flex;align-items:center;justify-content:space-between;padding:5px 7px 5px 10px;cursor:move;user-select:none;background:linear-gradient(90deg,#251b20,#39232b);border-bottom:1px solid #65464d;letter-spacing:.12em;font-size:10px;color:#c8b6ad}
-#dark-age-clocks-overlay .da-clocks-actions{display:flex;gap:4px}
+#dark-age-clocks-overlay .da-clocks-actions{display:flex;gap:4px}#dark-age-clocks-overlay .da-add-clock{font-size:17px;font-weight:700;line-height:15px}#dark-age-clocks-overlay .da-collapse{font-size:15px;font-weight:700;line-height:15px}#dark-age-clocks-overlay .da-clock-collapse{font-size:14px;font-weight:700;line-height:15px}
 #dark-age-clocks-overlay button{border:1px solid #77545d;border-radius:3px;color:#e7d9d0;background:#302328;cursor:pointer;min-width:21px;height:21px;line-height:17px;padding:0 5px}
 #dark-age-clocks-overlay button:hover{background:#5b2435;border-color:#b48b8c}
 #dark-age-clocks-overlay .da-clocks-list{display:flex;flex-direction:column;gap:3px;padding:6px;overflow-y:auto;max-height:calc(100vh - 70px)}
