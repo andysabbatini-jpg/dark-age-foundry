@@ -17,7 +17,7 @@
   "bugs": "https://github.com/andysabbatini-jpg/dark-age-foundry/issues",
   "version": "0.8.4",
   "compatibility": {
-    "minimum": 14,
+    "minimum": "14",
     "verified": "14"
   },
   "esmodules": [
