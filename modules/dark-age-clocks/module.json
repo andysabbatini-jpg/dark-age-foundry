@@ -1,0 +1,24 @@
+{
+  "id": "dark-age-clocks",
+  "title": "Dark Age — Orologi del DM",
+  "description": "Pannello di orologi per il Dungeon Master.",
+  "version": "0.1.4",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Andrea Sabbatini"
+    }
+  ],
+  "esmodules": [
+    "scripts/dark-age-clocks.js"
+  ],
+  "styles": [
+    "styles/dark-age-clocks.css"
+  ],
+  "url": "https://github.com/andysabbatini-jpg/dark-age-foundry",
+  "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/main/modules/dark-age-clocks/module.json",
+  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/clocks-v0.1.4/dark-age-clocks-v0.1.4.zip"
+}
