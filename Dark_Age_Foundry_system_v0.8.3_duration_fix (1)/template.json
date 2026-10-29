@@ -1,0 +1,92 @@
+{
+  "Actor": {
+    "types": ["character", "npc"],
+    "templates": {
+      "base": {
+        "health": {
+          "value": 10,
+          "min": 0,
+          "max": 10
+        },
+        "devils_luck": {
+          "value": 0,
+          "min": 0,
+          "max": 10
+        },
+        "spell_cast_amount": {
+          "value": 0,
+          "min": 0,
+          "max": 0
+        },
+        "biography": "",
+        "gp": 0
+      }
+    },
+    "character": {
+      "templates": ["base"],
+      "attributes": {
+        "level": {
+          "value": 1
+        }
+      },
+      "class_name": "",
+      "madness": 0,
+      "abilities": {
+        "str": {
+          "value": 0
+        },
+        "agl": {
+          "value": 0
+        },
+        "prs": {
+          "value": 0
+        },
+        "tgh": {
+          "value": 0
+        }
+      }
+    },
+    "npc": {
+      "templates": ["base"],
+      "morale": 0,
+      "armour": "",
+      "attack": "",
+      "captured_gp": 0,
+      "dead_gp": 0
+    }
+  },
+  "Item": {
+    "types": ["item", "feature", "spell","weapon","armour"],
+    "templates": {
+      "base": {
+        "description": "",
+        "gp": 0
+      }
+    },
+    "item": {
+      "templates": ["base"],
+      "quantity": 1,
+      "weight": 0,
+      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+    },
+    "weapon": {
+      "templates": ["base"],
+      "ranged": false,
+      "needs_ammo": false,
+      "ammunition": 0,
+      "damage": "1d4"
+    },
+    "feature": {
+      "templates": ["base"]
+    },
+    "spell": {
+      "templates": ["base"],
+      "spellLevel": 1
+    },
+    "armour": {
+      "templates": ["base"],
+      "level": 1,
+      "dice": "d2"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+    "id": "bpnb-borg",
+    "title": "Dark Age",
+    "description": "The Black Powder & Brimstone system for FoundryVTT!",
+    "authors": [
+        {
+            "name": "MrTheBino",
+            "discord": "MrTheBino"
+        }
+    ],
+    "url": "https://github.com/MrTheBino/bpnb_borg",
+    "license": "LICENSE.txt",
+    "readme": "README.md",
+    "bugs": "https://github.com/MrTheBino/bpnb_borg/issues",
+    "changelog": "CHANGELOG.md",
+    "media": [
+        {
+            "type": "setup",
+            "url": "systems/bpnb-borg/assets/screen.png",
+            "thumbnail": "systems/bpnb-borg/assets/screen.png"
+        }
+    ],
+    "version": "0.8.3",
+    "compatibility": {
+        "minimum": 13,
+        "verified": "13.351"
+    },
+    "esmodules": [
+        "module/bpnb_borg.mjs"
+    ],
+    "styles": [
+        "css/bpnb_borg.css"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        },
+        {
+            "lang": "it",
+            "name": "Italiano",
+            "path": "lang/it.json"
+        }
+    ],
+    "packs": [],
+    "packFolders": [],
+    "socket": false,
+    "background": "systems/bpnb-borg/assets/screen.png",
+    "grid": {
+        "distance": 5,
+        "units": "ft"
+    },
+    "primaryTokenAttribute": "health",
+    "secondaryTokenAttribute": "power"
+}

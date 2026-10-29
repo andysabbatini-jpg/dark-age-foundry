@@ -1,0 +1,123 @@
+{
+  "BPNB_BORG": {
+    "Labels": {
+      "DR": "DR",
+      "ATTACK": "Attacco",
+      "VS": "contro",
+      "Attack_Hit": "Colpito",
+      "Attack_Fumble": "Fallimento critico",
+      "Attack_Miss": "Mancato",
+      "Attack_Crit": "Colpo critico",
+      "Damage": "Danno",
+      "Armor": "Armatura",
+      "Damage_Done": "Danno inflitto",
+      "Defend": "Difesa",
+      "Defend_Got_Hit": "Difesa fallita!",
+      "Defend_Success": "Difesa riuscita!",
+      "Defend_Critical_Success": "Successo critico!",
+      "Defend_Critical_Success_Action": "Ottieni un attacco gratuito contro l'attaccante!",
+      "Defend_Fumble": "Fallimento critico!",
+      "Defend_Fumble_Action": "Subisci danno doppio e la tua armatura scende di un grado finché non viene riparata."
+    },
+    "RollDialog": {
+      "Roll": "Tira"
+    },
+    "Ability": {
+      "Str": {
+        "long": "Forza",
+        "abbr": "for"
+      },
+      "Agl": {
+        "long": "Agilità",
+        "abbr": "agi"
+      },
+      "Prs": {
+        "long": "Presenza",
+        "abbr": "pre"
+      },
+      "Tgh": {
+        "long": "Robustezza",
+        "abbr": "rob"
+      }
+    },
+    "SheetLabels": {
+      "Actor": "Scheda attore BPNB",
+      "Item": "Scheda oggetto BPNB"
+    },
+    "Item": {
+      "Spell": {
+        "SpellLVL": "Incantesimi di livello {level}",
+        "AddLVL": "Aggiungi liv. {level}",
+        "AddSpell": "Aggiungi incantesimo",
+        "Spells": "Incantesimi"
+      },
+      "Weapon": {
+        "Melee": "Corpo a corpo",
+        "Ranged": "A distanza"
+      }
+    },
+    "Effect": {
+      "Source": "Origine",
+      "Toggle": "Attiva/disattiva effetto",
+      "Temporary": "Effetti temporanei",
+      "Passive": "Effetti passivi",
+      "Inactive": "Effetti inattivi"
+    },
+    "UI": {
+      "Name": "Nome",
+      "Type": "Tipo",
+      "Health": "Punti Ferita",
+      "Armour": "Armatura",
+      "Morale": "Morale",
+      "Attack": "Attacco",
+      "DeadGP": "Oro (se ucciso)",
+      "CapturedGP": "Oro (se catturato)",
+      "Description": "Descrizione",
+      "DevilsLuck": "Fortuna del Diavolo",
+      "SpellsPerDay": "Incantesimi / giorno",
+      "Class": "Classe",
+      "Gold": "Oro",
+      "Level": "Livello",
+      "Madness": "Follia",
+      "Main": "Principale",
+      "Spells": "Incantesimi",
+      "Effects": "Effetti",
+      "ShortRest": "Riposo breve",
+      "LongRest": "Riposo lungo",
+      "Defend": "Difendi",
+      "Weapons": "Armi",
+      "Items": "Oggetti",
+      "Tier": "Grado",
+      "Dice": "Dado",
+      "Quantity": "Quantità",
+      "Weight": "Peso",
+      "Damage": "Danno",
+      "Ranged": "A distanza",
+      "NeedsAmmo": "Richiede munizioni?",
+      "Ammunition": "Munizioni",
+      "Attributes": "Attributi",
+      "Armor": "Armatura",
+      "CarryHint": "Forza + 8 oggetti, altrimenti DR+2 sui test di Agilità / Forza",
+      "ArmourRollLabel": "Tiro armatura",
+      "MoraleCheckLabel": "Prova di morale",
+      "DamageRollLabel": "Tiro danno",
+      "ShortRestFlavor": "Riposo breve - Recuperi:",
+      "LongRestFlavor": "Riposo lungo - Recuperi:",
+      "RollDialogTitle": "Finestra di tiro",
+      "DefendDialogTitle": "Finestra di difesa"
+    }
+  },
+  "TYPES": {
+    "Actor": {
+      "character": "Personaggio",
+      "npc": "PNG"
+    },
+    "Item": {
+      "item": "Oggetto",
+      "feature": "Tratto",
+      "spell": "Incantesimo",
+      "weapon": "Arma",
+      "armour": "Armatura"
+    }
+  }
+}
