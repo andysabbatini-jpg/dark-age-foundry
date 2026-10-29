@@ -1,6 +1,9 @@
 {
   "Actor": {
-    "types": ["character", "npc"],
+    "types": [
+      "character",
+      "npc"
+    ],
     "templates": {
       "base": {
         "health": {
@@ -23,7 +26,9 @@
       }
     },
     "character": {
-      "templates": ["base"],
+      "templates": [
+        "base"
+      ],
       "attributes": {
         "level": {
           "value": 1
@@ -44,10 +49,31 @@
         "tgh": {
           "value": 0
         }
-      }
+      },
+      "subclass_name": "",
+      "events": [
+        {
+          "title": "Poteri oscuri e mutazioni",
+          "entries": []
+        },
+        {
+          "title": "Legami, debiti e giuramenti",
+          "entries": []
+        },
+        {
+          "title": "Segreti e conoscenze proibite",
+          "entries": []
+        },
+        {
+          "title": "Ferite e conseguenze",
+          "entries": []
+        }
+      ]
     },
     "npc": {
-      "templates": ["base"],
+      "templates": [
+        "base"
+      ],
       "morale": 0,
       "armour": "",
       "attack": "",
@@ -56,7 +82,13 @@
     }
   },
   "Item": {
-    "types": ["item", "feature", "spell","weapon","armour"],
+    "types": [
+      "item",
+      "feature",
+      "spell",
+      "weapon",
+      "armour"
+    ],
     "templates": {
       "base": {
         "description": "",
@@ -64,27 +96,37 @@
       }
     },
     "item": {
-      "templates": ["base"],
+      "templates": [
+        "base"
+      ],
       "quantity": 1,
       "weight": 0,
       "formula": "d20 + @str.mod + ceil(@lvl / 2)"
     },
     "weapon": {
-      "templates": ["base"],
+      "templates": [
+        "base"
+      ],
       "ranged": false,
       "needs_ammo": false,
       "ammunition": 0,
       "damage": "1d4"
     },
     "feature": {
-      "templates": ["base"]
+      "templates": [
+        "base"
+      ]
     },
     "spell": {
-      "templates": ["base"],
+      "templates": [
+        "base"
+      ],
       "spellLevel": 1
     },
     "armour": {
-      "templates": ["base"],
+      "templates": [
+        "base"
+      ],
       "level": 1,
       "dice": "d2"
     }
