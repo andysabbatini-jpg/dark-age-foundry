@@ -1,6 +1,6 @@
 {
   "id": "dark-age-foundry",
-  "title": "Black Powder and Brimstone 0.8.4",
+  "title": "Black Powder and Brimstone — Dark Age fork",
   "description": "Fork indipendente di Dark Age per Foundry VTT, mantenuto da Andrea Sabbatini.",
   "authors": [
     {
@@ -20,7 +20,7 @@
       "thumbnail": "systems/dark-age-foundry/assets/screen.png"
     }
   ],
-  "version": "0.8.4",
+  "version": "0.8.5",
   "compatibility": {
     "minimum": 14,
     "verified": "14"
@@ -52,5 +52,7 @@
     "units": "ft"
   },
   "primaryTokenAttribute": "health",
-  "secondaryTokenAttribute": "power"
+  "secondaryTokenAttribute": "power",
+  "manifest": "https://raw.githubusercontent.com/andysabbatini-jpg/dark-age-foundry/v0.8.5/system.json",
+  "download": "https://github.com/andysabbatini-jpg/dark-age-foundry/releases/download/v0.8.5/dark-age-foundry.zip"
 }
