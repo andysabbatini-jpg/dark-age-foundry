@@ -26,7 +26,7 @@ export class Bpnb_borgItemSheet extends foundry.appv1.sheets.ItemSheet {
 
   /** @override */
   get template() {
-    const path = 'systems/bpnb-borg/templates/item';
+    const path = 'systems/dark-age-foundry/templates/item';
     // Return a single sheet for all item types.
     // return `${path}/item-sheet.hbs`;
 
