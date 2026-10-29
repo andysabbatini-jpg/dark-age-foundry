@@ -36,7 +36,7 @@ export async function attackRollDialogV2(actor,itemId,data_roll,label,damage){
         rollArmorFormula
       };
       const html = await foundry.applications.handlebars.renderTemplate(
-        "systems/bpnb-borg/templates/dialogs/attack_roll_dialog.hbs",
+        "systems/dark-age-foundry/templates/dialogs/attack_roll_dialog.hbs",
         rollResult
       );
 
@@ -68,7 +68,7 @@ export async function defendRollDialog(actor,modifier){
     rollFormula
   };
   const html = await foundry.applications.handlebars.renderTemplate(
-    "systems/bpnb-borg/templates/dialogs/defend_dialog.hbs",
+    "systems/dark-age-foundry/templates/dialogs/defend_dialog.hbs",
     rollResult
   );
 
@@ -115,7 +115,7 @@ export async function attackRollDialog(actor,itemId,data_roll,label){
         label
       };
       const html = await foundry.applications.handlebars.renderTemplate(
-        "systems/bpnb-borg/templates/dialogs/roll_dialog.hbs",
+        "systems/dark-age-foundry/templates/dialogs/roll_dialog.hbs",
         rollResult
       );
 
@@ -230,7 +230,7 @@ async function attackDialogCallbackV2(actor, html) {
 
 async function renderAttackRollCard(actor, rollResult) {
   const html = await foundry.applications.handlebars.renderTemplate(
-    "systems/bpnb-borg/templates/chat/attack-roll-card.hbs",
+    "systems/dark-age-foundry/templates/chat/attack-roll-card.hbs",
     rollResult
   );
   ChatMessage.create({
@@ -241,7 +241,7 @@ async function renderAttackRollCard(actor, rollResult) {
 
 async function renderDefendRollCard(actor, rollResult) {
   const html = await foundry.applications.handlebars.renderTemplate(
-    "systems/bpnb-borg/templates/chat/defend-roll-card.hbs",
+    "systems/dark-age-foundry/templates/chat/defend-roll-card.hbs",
     rollResult
   );
   ChatMessage.create({
