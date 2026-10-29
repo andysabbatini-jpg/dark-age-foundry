@@ -106,7 +106,11 @@
       "RollDialogTitle": "Finestra di tiro",
       "DefendDialogTitle": "Finestra di difesa",
       "Subclass": "Sottoclasse",
-      "Events": "Cronache ed effetti narrativi"
+      "Events": "Cronache ed effetti narrativi",
+      "EventTitle": "Titolo",
+      "EventDescription": "Descrizione breve",
+      "DeleteEvent": "Elimina voce",
+      "AddEvent": "Aggiungi"
     }
   },
   "TYPES": {
