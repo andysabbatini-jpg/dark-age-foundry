@@ -29,7 +29,7 @@ jobs:
           p = Path("Dark_Age_Foundry_system_v0.8.3_duration_fix (1)/system.json")
           data = json.loads(p.read_text(encoding="utf-8"))
           data["version"] = "0.8.4"
-data["title"] = "Black Powder and Brimstone 0.8.4"
+          data["title"] = "Black Powder and Brimstone 0.8.4"
           data["compatibility"] = {"minimum": 14, "verified": "14"}
           p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
           for f in Path("Dark_Age_Foundry_system_v0.8.3_duration_fix (1)").rglob("*.json"):
@@ -41,12 +41,13 @@ data["title"] = "Black Powder and Brimstone 0.8.4"
           cd dist
           zip -qr ../Black_Powder_and_Brimstone_0.8.4.zip bpnb-borg
           cd ..
-          unzip -l Dark_Age_Foundry_system_v0.8.4-test.zip
-      - name: Upload installable test ZIP
+          unzip -l Black_Powder_and_Brimstone_0.8.4.zip
+
+      - name: Upload installable package artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Dark-Age-Foundry-0.8.4-test
-          path: Dark_Age_Foundry_system_v0.8.4-test.zip
+          name: Black-Powder-and-Brimstone-0.8.4
+          path: Black_Powder_and_Brimstone_0.8.4.zip
           if-no-files-found: error
           retention-days: 14
 
@@ -58,4 +59,4 @@ data["title"] = "Black Powder and Brimstone 0.8.4"
           prerelease: false
           draft: false
           generate_release_notes: false
-          files: Dark_Age_Foundry_system_v0.8.4-test.zip
+          files: Black_Powder_and_Brimstone_0.8.4.zip
