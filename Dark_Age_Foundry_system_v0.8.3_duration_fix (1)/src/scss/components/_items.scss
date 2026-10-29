@@ -119,3 +119,30 @@
   flex: 0 0 200px;
   padding: 0 8px;
 }
+
+// Narrative archive fields
+.narrative-events {
+  .event-group {
+    margin: 0 0 1rem;
+  }
+
+  .event-entry {
+    display: block;
+    padding: 0.35rem 0.25rem;
+
+    input.event-field,
+    textarea.event-field {
+      width: 100%;
+      min-width: 0;
+      margin: 0.2rem 0;
+    }
+
+    textarea.event-field {
+      resize: vertical;
+    }
+  }
+
+  .event-add {
+    margin: 0.25rem 0 0.5rem;
+  }
+}
