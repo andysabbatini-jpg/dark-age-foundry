@@ -43,16 +43,19 @@
         </div>
 
       </div>
-      <div class="resources grid grid-4col">
+      <div class="resources grid grid-5col">
 
 
 
         <div class="resource flex-group-center">
-          <label for="system.attributes.level.value" class="resource-label">{{localize 'BPNB_BORG.UI.Class'}}</label>
+          <label for="system.class_name" class="resource-label">{{localize 'BPNB_BORG.UI.Class'}}</label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="text" name="system.class_name" value="{{system.class_name}}" data-dtype="String" />
           </div>
-          <label class="resource-label">{{localize 'BPNB_BORG.UI.Subclass'}}</label>
+        </div>
+
+        <div class="resource flex-group-center">
+          <label for="system.subclass_name" class="resource-label">{{localize 'BPNB_BORG.UI.Subclass'}}</label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="text" name="system.subclass_name" value="{{system.subclass_name}}" data-dtype="String" />
           </div>
